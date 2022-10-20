@@ -48,6 +48,7 @@ body{
     color: var(--primary-text-color);
     background-color: var(--white);
     font-family: Roboto, sans-serif;
+    /* overflow-x: hidden; */
 }
 /* header */
 .top{
@@ -136,6 +137,8 @@ body{
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .contacts .meltel:hover,
@@ -150,6 +153,12 @@ body{
     padding-right: 15px;
     width: 1200px;
 }
+
+.icons-header{
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 /* main */
 .hero{
     background-color: var(--background);
@@ -278,6 +287,17 @@ body{
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.features{
+    background-color: var(--button);
+    border-radius: 4px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
+
+.features-icons{
+    
 }
 
 .section-ti{
