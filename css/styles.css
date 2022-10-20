@@ -8,6 +8,7 @@
     --button: #F5F4FA;
     --footer-meltel: rgba(255, 255, 255, 0.6);
     --button-inactive: #188CE8;
+    --icons: #AFB1B8;
 }
 
 /* html{
@@ -349,6 +350,43 @@ body{
     line-height: 1.9;
     letter-spacing: 0.03em;
 }
+.team-people{
+    display: flex;
+}
+.team-people .people:not(:last-child){
+    margin-right: 30px;
+}
+
+.soclink{
+    display: flex;
+    padding: 16px 32px 30px 32px;
+    margin: 0;
+    /* outline: 1px solid teal; */
+    gap: 10px;
+    justify-content: center;
+}
+
+.link-icon{
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    /* outline: 2px solid black; */
+}
+.link-icon:hover{
+    background-color: var(--accent-color);
+}
+.link-icon:hover .social-networks{
+    fill: var(--white);
+}
+
+.social-networks{
+    fill: var(--icons);
+    /* outline: 1px solid tomato; */
+    position: relative;
+    top: 12px;
+}
+
 
 .link{
     text-decoration: none;
@@ -360,7 +398,6 @@ body{
 
 .description-p{
     padding-top: 30px;
-    padding-bottom: 30px;
     width: 270px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
