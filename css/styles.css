@@ -404,7 +404,8 @@ body{
 }
 
 
-.link{
+.link,
+.link-portfolio{
     text-decoration: none;
 }
 
@@ -443,8 +444,8 @@ body{
     margin-bottom: 30px;
 }
 
-.product-element .link:hover,
-.product-element .link:focus{
+.link-portfolio:hover,
+.link-portfolio:focus{
     display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
             0px 4px 4px rgba(0, 0, 0, 0.06),
