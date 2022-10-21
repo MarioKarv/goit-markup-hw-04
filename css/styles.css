@@ -130,7 +130,6 @@ body{
 }
 
 .contacts .meltel{
-    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--primary-text-color);
@@ -179,6 +178,9 @@ body{
      rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)
      ), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title{
@@ -295,8 +297,11 @@ body{
 .features{
     background-color: var(--button);
     border-radius: 4px;
-    padding: 25px 100px;
     margin-bottom: 30px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .features-icons{
@@ -330,6 +335,7 @@ body{
 }
 
 .section-ti-sec-descr{
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
@@ -361,7 +367,6 @@ body{
 
 .soclink{
     display: flex;
-    padding: 16px 32px 30px 32px;
     margin: 0;
     /* outline: 1px solid teal; */
     gap: 10px;
@@ -369,10 +374,12 @@ body{
 }
 
 .link-icon{
-    display: block;
+    display: flex;
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    justify-content: center;
+    align-items: center;
     /* outline: 2px solid black; */
 }
 .link-icon:hover{
@@ -394,8 +401,6 @@ body{
 .social-networks{
     fill: var(--icons);
     /* outline: 1px solid tomato; */
-    position: relative;
-    top: 12px;
 }
 
 
@@ -409,6 +414,7 @@ body{
 
 .description-p{
     padding-top: 30px;
+    padding-bottom: 30px;
     width: 270px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -437,8 +443,12 @@ body{
     margin-bottom: 30px;
 }
 
-.product-element:hover{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.product-element .link:hover,
+.product-element .link:focus{
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .product-element:nth-child(3n){
@@ -519,6 +529,7 @@ body{
 }
 .flex-foot{
     display: flex;
+    align-items: baseline;
 }
 
 .foot-links{
@@ -527,8 +538,6 @@ body{
 
 .join{
     margin-left: 70px;
-    padding-top: 12px;
-    padding-bottom: 40px;
 }
 
 .foot-join{
@@ -552,12 +561,14 @@ body{
 }
 
 .foot-link-icon {
-    display: block;
+    display: flex;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     /* outline: 2px solid white; */
     background-color: var(--icons-foot);
+    justify-content: center;
+    align-items: center;
 }
 
 .foot-link-icon:hover {
@@ -579,7 +590,4 @@ body{
 .foot-social-networks {
     fill: var(--white);
     /* outline: 1px solid tomato; */
-    position: relative;
-    top: 12px;
-    left: 12px;
 }
